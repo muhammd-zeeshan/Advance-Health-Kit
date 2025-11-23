@@ -11,7 +11,7 @@ import SwiftUI
 struct HealthAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HealthDashboarddView(viewModel: HealthDashboardViewModel(repository: HealthRepository(service: HealthKitService())))
         }
     }
 }
