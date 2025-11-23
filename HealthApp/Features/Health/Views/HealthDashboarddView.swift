@@ -36,7 +36,7 @@ struct HealthDashboarddView: View {
             
             Spacer()
             
-            HStack {
+            HStack(spacing: 20) {
                 Button {
                     Task {
                         await viewModel.requestAuthorization()
@@ -45,7 +45,7 @@ struct HealthDashboarddView: View {
                     Text("Request Authorization")
                 }
                 
-                Text("|")
+                
                 
                 Button {
                     Task {
